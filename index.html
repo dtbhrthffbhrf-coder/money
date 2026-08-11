@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MoneyWise แหล่งอ่านความรู้ทางการเงินที่เข้าใจง่าย ใช้ได้จริงกับชีวิตประจำวัน">
+  <meta name="theme-color" content="#4CAF80">
+  <title>MoneyWise — เรื่องเงินไม่ใช่เรื่องยาก</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="config/settings.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="MoneyWise หน้าหลัก">
+        <span class="brand-mark" aria-hidden="true">฿</span>
+        <span>MoneyWise</span>
+      </a>
+      <a class="discord-button" data-discord-link target="_blank" rel="noopener" aria-label="เข้าร่วม Discord ของ MoneyWise">
+        <svg class="discord-icon" aria-hidden="true" width="16" height="12" viewBox="0 0 71 55" fill="currentColor"><path d="M60.1 4.9A58.5 58.5 0 0 0 45.4.2a.2.2 0 0 0-.2.1 40.8 40.8 0 0 0-1.8 3.7 54 54 0 0 0-16.2 0A37.4 37.4 0 0 0 25.4.3a.2.2 0 0 0-.2-.1A58.4 58.4 0 0 0 10.5 4.9a.2.2 0 0 0-.1.1C1.5 18.7-.9 32.2.3 45.5v.2a58.9 58.9 0 0 0 17.7 9a.2.2 0 0 0 .3-.1 42.1 42.1 0 0 0 3.6-5.9.2.2 0 0 0-.1-.3 38.8 38.8 0 0 1-5.5-2.6.2.2 0 0 1 0-.4l1.1-.9a.2.2 0 0 1 .2 0 42 42 0 0 0 35.6 0 .2.2 0 0 1 .2 0l1.1.9a.2.2 0 0 1 0 .4 36.4 36.4 0 0 1-5.5 2.6.2.2 0 0 0-.1.3 47.2 47.2 0 0 0 3.6 5.9.2.2 0 0 0 .3.1A58.7 58.7 0 0 0 70.5 45.7v-.2c1.4-15-2.3-28.4-9.8-40.1a.2.2 0 0 0-.1-.1ZM23.7 37.3c-3.5 0-6.3-3.2-6.3-7s2.8-7 6.3-7 6.4 3.2 6.3 7-2.8 7-6.3 7Zm23.2 0c-3.5 0-6.3-3.2-6.3-7s2.8-7 6.3-7 6.4 3.2 6.3 7-2.8 7-6.3 7Z"/></svg>
+        Join Discord
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow">เงินดี ชีวิตเบา</span>
+        <h1>เรื่องเงิน<br><span>ไม่ใช่เรื่องยาก</span></h1>
+        <p>อ่านเรื่องเงินให้เข้าใจ แล้วนำไปใช้กับชีวิตจริง</p>
+        <a class="primary-button" href="#articles">ดูบทความทั้งหมด <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-card hero-card-main"><span class="mini-label">เงินออมของฉัน</span><strong>฿ 48,500</strong><span class="trend">↗ 12.8% เดือนนี้</span></div>
+        <div class="hero-card hero-card-small"><span class="coin">฿</span><span>วางแผน<br>ให้เงินโต</span></div>
+        <div class="hero-coin coin-large">฿</div><div class="hero-coin coin-small">+</div>
+      </div>
+    </section>
+
+    <div class="container"><div class="ad-slot" data-ad="top"></div></div>
+
+    <section class="discover container" id="articles">
+      <div class="section-heading"><div><span class="eyebrow">คลังความรู้</span><h2>เลือกอ่านเรื่องที่คุณสนใจ</h2></div><span class="article-count" data-article-count></span></div>
+      <div class="controls">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="search-input" placeholder="ค้นหาบทความ..." aria-label="ค้นหาบทความ"></label>
+        <div class="category-list" role="tablist" aria-label="เลือกหมวดหมู่บทความ">
+          <button class="category-button active" data-category="ทั้งหมด" role="tab" aria-selected="true">ทั้งหมด</button>
+          <button class="category-button" data-category="การเงินส่วนบุคคล" role="tab" aria-selected="false">การเงินส่วนบุคคล</button>
+          <button class="category-button" data-category="การออมเงิน" role="tab" aria-selected="false">การออมเงิน</button>
+          <button class="category-button" data-category="การลงทุน" role="tab" aria-selected="false">การลงทุน</button>
+          <button class="category-button" data-category="หนี้" role="tab" aria-selected="false">หนี้</button>
+          <button class="category-button" data-category="วางแผนการเงิน" role="tab" aria-selected="false">วางแผนการเงิน</button>
+        </div>
+      </div>
+      <div class="article-grid" data-article-grid aria-live="polite"></div>
+      <p class="empty-state" data-empty-state hidden>ไม่พบบทความที่ตรงกับคำค้น ลองค้นหาด้วยคำอื่นดูนะ</p>
+    </section>
+
+    <div class="container"><div class="ad-slot" data-ad="middle"></div></div>
+  </main>
+
+  <div class="container"><div class="ad-slot" data-ad="bottom"></div></div>
+
+  <footer class="site-footer"><div class="container footer-inner"><div class="brand"><span class="brand-mark" aria-hidden="true">฿</span><span>MoneyWise</span></div><p>ความรู้การเงินที่ทำให้คุณตัดสินใจได้ดีขึ้น</p><small>© 2026 MoneyWise. อ่านให้รู้ วางแผนให้เป็น.</small></div></footer>
+</body>
+</html>
